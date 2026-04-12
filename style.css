@@ -1,0 +1,15 @@
+body {
+    background-color: #f8f9fa;
+}
+.btn-info {
+    justify-content: flex-end;
+}
+.card {
+    box-shadow:
+        8px 8px 16px rgba(0, 0, 0, 0.08),
+        -8px -8px 16px rgba(255, 255, 255, 0.8);
+    border-radius: 0.5rem;
+}
+#products {
+    margin-top: 3rem;
+}
