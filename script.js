@@ -19,6 +19,7 @@ const fetchProduct = async () => {
     }
 };
 
+//FUNZIONA CHE CREA IL DIV CON I PRODOTTI
 const createDiv = (products) =>
     products.forEach((p) => {
         const card = document.createElement("card");

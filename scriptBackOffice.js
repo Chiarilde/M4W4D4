@@ -56,6 +56,7 @@ async function createProduct(e) {
     }
 }
 
+//FUNZIONE CHE MODIFICA UN PRODOTTO
 async function editProduct(event) {
     event.preventDefault();
     const form = new FormData(this);
@@ -90,6 +91,7 @@ async function editProduct(event) {
 formHtml.addEventListener("submit", createProduct);
 editForm.addEventListener("submit", editProduct);
 
+//FUNZIONE CHE CANCELLA UN PRODOTTO
 const deleteProduct = async (product) => {
     try {
         await fetch(
@@ -108,7 +110,7 @@ const deleteProduct = async (product) => {
         console.error(error);
     }
 };
-
+//FUNZIONE CHE CREA LA LISTA NELLA PAGINA DI BACK OFFICE
 const createList = (products) => {
     const table = document.createElement("table");
     table.classList = "table table-striped";
